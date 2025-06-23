@@ -1,0 +1,97 @@
+文本生成评价指南
+目的：
+本指南旨在指导评价者如何评价词义生成任务中的输出，特别是关注于语义相似度、信息完整性和流畅度。
+
+若词义为空或完全错误：评分为0
+
+评价标准
+一、语义相似度：
+评价要点：判断生成词义在上下文中是否正确，只考虑表达准确不考虑其他方面，能够将词义描述得很仔细更好。
+评分规则：1分表示完全不正确，3分表示有一定的关联，但是有一定的差异，5分表示完全正确。
+举例：【标黑字体即为目标词】
+1分: 生成的词义与目标词无关，或者与另一个目标词的词义混淆。
+例：
+上下文：squeegee the windows
+词义：to cover with squeegee
+2分: 目标词识别正确，但是词义解释不够恰当，没有结合上下文。
+例：
+上下文：writers like the romantics , who found mystery in the commonplace and saw the universal in each individual 's experience , remind us to hope .
+词义：A romantic is someone who likes to be romantic.
+3分: 能够正确识别到目标词，部分结合上下文，但对词义的阐述不够详尽。
+例：
+上下文：yearly , a scientific meeting is held , which focuses specifically on cryobiology and related topics .
+词义：the branch of science concerned with the study of the life cycle of living organisms.
+4分: 能够正确识别到目标词，词义表达基本与上下文一致。
+例：
+上下文：squeegee the windows
+词义：If you squeegee something or squeegee it with a squeegee, you make it squeegee by moving the squeegee up and down quickly and repeatedly.
+5分: 词义表达准确无误，完全结合上下文。
+例：
+上下文：Much of their study and revision was done to the thud of hammers and pneumatic drills .
+词义：A thud is a loud noise.
+
+
+
+
+
+
+二、信息完整性：
+评价要点：评估生成文本是否完整地包含了参考文本的所有关键信息点。
+评分规则：1分表示信息严重缺失，3分表示包含了其中一部分的信息点，但是遗漏了重要的内容，5分表示信息非常完整。
+【会提供词义关键信息点】
+举例：
+1分: 完全缺乏词义所需的信息，未能体现任何相关内容。
+例：
+参考关键词：['opinion', 'thing']
+词义：To perceive, to perceive, to perceive.
+2分：仅包含极少量相关信息，缺失大部分关键内容。
+例：
+参考关键词：['people or things', 'couple of people', 'approximately', 'exact number', 'important', 'refer']
+词义：A small number.
+
+3分：包含部分重要信息点，但遗漏了一些核心内容。
+例：
+参考关键词：['people or things', 'couple of people', 'approximately', 'exact number', 'important', 'refer']
+词义：A couple is a group of people who are together.
+
+4分：涵盖了大多数信息点，但缺少一些细节。
+例：
+参考关键词：['opinion', 'thing']
+词义：If you see someone or something as a particular thing, you think that they are that thing.
+
+5分：信息表达极为完整，准确涵盖了所有关键点。
+例：
+参考关键词：['people or things', 'couple of people', 'approximately', 'exact number', 'important', 'refer']
+词义：A couple is two people.
+
+
+
+
+
+
+
+
+
+
+
+
+三、流畅度和自然性：
+评价要点：评估生成文本的可读性，包括语法正确性和文本的流畅度，是否是一个完整的句子。
+评分规则：1分表示难以理解，不是完整句子；3分表示可理解，但是语句不够顺畅，有少量语法错误；5分表示非常流畅自然，且是一个完整的句子。
+举例：
+1分: 文本不构成完整句子，难以理解或无法辨识其语义意图。
+例：to cover with squeegee.
+2分: 句子结构不完整，理解上有难度，存在不顺畅的表达和明显的语法错误。
+例：the act of allowing something to pass or be withdrawn.
+3分: 句子基本可理解，但流畅度和连贯性有待提升，含有少量语法错误。
+例：The cat it's sat on the mat.
+4分: 句子结构完整，表达基本连贯，但在某些部分欠缺流畅性，整体上能够理解。
+例：a person who is interested in or influenced by the romanticism of others.
+5分: 句子完整，表达清晰连贯，读起来流畅自然，容易理解。
+例：You use now to indicate that something is the case to a great extent, especially when you are mentioning something that has happened recently.
+
+操作指南：
+仔细阅读评判标准，根据上述三个标准对每个文本进行评分。请尽量保持评价的客观性和一致性。
+
+反馈和改进：
+我们鼓励评价者在评价过程中提供任何反馈。如有任何关于评价过程的建议，欢迎随时提出。
